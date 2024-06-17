@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deep Mart</title>
+    <link
+      rel="shortcut icon"
+      href="img/favicon-16x16.png"
+      type="image/x-icon"
+    />
+    <!-- swwiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ============== Navbar =============== -->
+
+    <header class="header">
+      <div class="top-header">
+        <p class="header-coupons">Super value deals - save more with coupons</p>
+      </div>
+      <div class="container header-container">
+        <nav class="navbar">
+          <a href="index.html" class="nav-logo">
+            <img src="img/logo.jpeg" alt="" />
+          </a>
+
+          <div class="navbar-container">
+            <ul class="nav-lists">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="shop.html" class="nav-link">Shop</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="accounts.html" class="nav-link">Account</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="login.html" class="nav-link active-link">Login</a>
+              </li>
+            </ul>
+
+            <div class="nav-search">
+              <input
+                type="text"
+                placeholder="Search here..."
+                class="form-input"
+              />
+              <img src="img/svg/search.svg" alt="" />
+            </div>
+          </div>
+        </nav>
+
+        <div class="nav-user-action">
+          <a href="wishlist.html" class="header-action-btn">
+            <img src="img/svg/favorite.svg" alt="" />
+            <span class="count">3</span>
+          </a>
+
+          <a href="addtocart.html" class="header-action-btn">
+            <img src="img/svg/shopping_cart.svg" alt="" />
+            <span class="count">3</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ============== Main =============== -->
+
+    <main class="main">
+      <!-- ============== Breadcrumb =============== -->
+
+      <section class="breadcrumb">
+        <ul class="breadcrumb-list container flex">
+          <li><a href="index.html" class="breadcrumb-link">Home</a></li>
+          <li><span class="breadcrumb-link">></span></li>
+          <li><span class="breadcrumb-link">Login / Register</span></li>
+        </ul>
+      </section>
+
+      <!-- ============== Login / Register =============== -->
+
+      <section class="login-register section-lg">
+        <div class="container">
+          <div class="wrapper">
+            <div class="login log-section grid">
+              <div class="login-content">
+                <h3 class="login-content-title">E.Com</h3>
+                <h2 class="login-content-heading">
+                  Welcome <br />
+                  Back!
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+
+              <div class="login-form">
+                <div class="login-action">
+                  <h2 class="form-title">Sign in</h2>
+                  <form class="login-action-form flex">
+                    <p>
+                      <label>Email </label>
+                      <input type="email" placeholder="Enter your email" />
+                    </p>
+                    <p>
+                      <label>Password </label>
+                      <input
+                        type="password"
+                        placeholder="Enter your password"
+                      />
+                    </p>
+
+                    <div class="log-forget flex">
+                      <p class="check">
+                        <input type="checkbox" id="remember" />
+                        <label for="remember">Remember me</label>
+                      </p>
+                      <a href="#" class="login-forgot">Forgot Password</a>
+                    </div>
+
+                    <a href="#" class="login-btn btn">Login</a>
+                  </form>
+
+                  <div class="after-loginform">
+                    <p>Don't have an Account?</p>
+                    <a href="#" class="register-btn">Register now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- =========== Registration ============= -->
+
+            <div class="signup login grid">
+              <div class="login-content">
+                <h3 class="login-content-title">E.Com</h3>
+                <h2 class="login-content-heading">
+                  Sign Up <br />
+                  Now
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+
+              <div class="login-form">
+                <div class="login-action">
+                  <h2 class="form-title">Create Account</h2>
+                  <form class="login-action-form flex">
+                    <p>
+                      <label>Full Name </label>
+                      <input type="text" placeholder="Enter your Name" />
+                    </p>
+                    <p>
+                      <label>Email </label>
+                      <input type="email" placeholder="Enter your email" />
+                    </p>
+                    <p>
+                      <label>Password </label>
+                      <input
+                        type="password"
+                        placeholder="Enter your password"
+                      />
+                    </p>
+                    <p>
+                      <label>Confirm Password </label>
+                      <input
+                        type="password"
+                        placeholder="Confirm your password"
+                      />
+                    </p>
+
+                    <p class="check">
+                      <input type="checkbox" id="terms1" />
+                      <label for="terms1"
+                        >I am agree with all
+                        <a href="#" class="terms">Terms & conditions.</a></label
+                      >
+                    </p>
+                    <a href="#" class="login-btn btn">Sign up</a>
+                  </form>
+
+                  <div class="social-login">
+                    <p><span> Or sign up with </span></p>
+                    <ul class="login-social flex">
+                      <li>
+                        <a href="#"
+                          ><i class="fa-brands google fa-google"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="fa-brands facebook fa-facebook"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="fa-brands twitter fa-twitter"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="after-loginform">
+                    <p>Already have an Account?</p>
+                    <a href="#" class="login-btn">Login here</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============== Newsletter =============== -->
+
+      <section class="newsletter section home-newsletter">
+        <div class="newsletter-container container grid">
+          <h3 class="newsletter-tittle flex">
+            <img src="img/svg/Email.svg" alt="" class="newsletter-icon" />
+            Subscribe Newsletter
+          </h3>
+          <p class="newsletter-description">
+            ...to get best offers and coupons instantly
+          </p>
+          <form class="newsletter-form flex">
+            <input
+              type="text"
+              class="newsletter-input"
+              placeholder="Enter your Email"
+            />
+            <a href="" class="btn subscribe-btn">Subscribe</a>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============== Footer =============== -->
+
+    <footer class="footer container">
+      <div class="footer-container section grid">
+        <div class="footer-address">
+          <a href="index.html" class="footer-logo">
+            <img src="img/logo.jpeg" alt="" />
+          </a>
+          <h4 class="footer-subtittle">Contact</h4>
+
+          <p class="footer-description">
+            <b>Address : </b> Badshahpur sector 49, Gurgoan
+          </p>
+
+          <p class="footer-description">
+            <b>Phone No : </b> +91 XXX XXX 3802, +91 XXX XXX 6377
+          </p>
+
+          <div class="footer-social">
+            <h4 class="social-subtittle">Follow us :</h4>
+
+            <div class="footer-social-links flex">
+              <a href="" class="footer-social-icon">
+                <img src="img/svg/facebook.svg" alt="" />
+              </a>
+
+              <a href="" class="footer-social-icon">
+                <img src="img/svg/twitter.svg" alt="" />
+              </a>
+
+              <a href="" class="footer-social-icon">
+                <img src="img/svg/instagram.svg" alt="" />
+              </a>
+
+              <a href="" class="footer-social-icon">
+                <img src="img/svg/whatsapp.svg" alt="" />
+              </a>
+
+              <a href="" class="footer-social-icon">
+                <img src="img/svg/youtube.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h3 class="footer-tittle">Address</h3>
+
+          <ul class="footer-links">
+            <li><a href="pages/about.html" class="footer-link">About us</a></li>
+            <li><a href="pages/about.html" class="footer-link">FAQ</a></li>
+            <li>
+              <a href="pages/about.html" class="footer-link"
+                >Privacy & Policy</a
+              >
+            </li>
+            <li>
+              <a href="pages/about.html" class="footer-link"
+                >Terms & conditions</a
+              >
+            </li>
+            <li>
+              <a href="pages/about.html" class="footer-link">Contact us</a>
+            </li>
+            <li>
+              <a href="pages/about.html" class="footer-link">Support Center</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-myaccounts">
+          <h3 class="footer-tittle">My Accounts</h3>
+
+          <ul class="footer-links">
+            <li><a href="pages/about.html" class="footer-link">Sign in</a></li>
+            <li>
+              <a href="pages/about.html" class="footer-link">my wishlist</a>
+            </li>
+            <li>
+              <a href="pages/about.html" class="footer-link">View cart</a>
+            </li>
+            <li><a href="pages/about.html" class="footer-link">Orders</a></li>
+            <li><a href="pages/about.html" class="footer-link">Help</a></li>
+            <li><a href="pages/about.html" class="footer-link">Others</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-payments">
+          <h3 class="footer-tittle">Secured payment Getways</h3>
+
+          <img src="img/payment-getways.png" alt="" />
+        </div>
+      </div>
+
+      <div class="footer-bottom flex">
+        <p>&copy; 2024 Deep mart pvt. ltd.</p>
+        <p>All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <!-- ============== Javascript =============== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

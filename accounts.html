@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deep Mart</title>
+    <link
+      rel="shortcut icon"
+      href="img/favicon-16x16.png"
+      type="image/x-icon"
+    />
+    <!-- swwiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ============== Navbar =============== -->
+
+    <header class="header">
+      <div class="top-header">
+        <p class="header-coupons">Super value deals - save more with coupons</p>
+      </div>
+      <div class="container header-container">
+        <nav class="navbar">
+          <a href="index.html" class="nav-logo">
+            <img src="img/logo.jpeg" alt="" />
+          </a>
+
+          <div class="navbar-container">
+            <ul class="nav-lists">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="shop.html" class="nav-link">Shop</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="accounts.html" class="nav-link active-link">Account</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="login.html" class="nav-link">Login</a>
+              </li>
+            </ul>
+
+            <div class="nav-search">
+              <input
+                type="text"
+                placeholder="Search here..."
+                class="form-input"
+              />
+              <img src="img/svg/search.svg" alt="" />
+            </div>
+          </div>
+        </nav>
+
+        <div class="nav-user-action">
+          <a href="wishlist.html" class="header-action-btn">
+            <img src="img/svg/favorite.svg" alt="" />
+            <span class="count">3</span>
+          </a>
+
+          <a href="addtocart.html" class="header-action-btn">
+            <img src="img/svg/shopping_cart.svg" alt="" />
+            <span class="count">3</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ============== Main =============== -->
+
+    <main class="main">
+      <!-- ============== Breadcrumb =============== -->
+
+      <section class="breadcrumb">
+        <ul class="breadcrumb-list container flex">
+          <li><a href="index.html" class="breadcrumb-link">Home</a></li>
+          <li><span class="breadcrumb-link">></span></li>
+          <li><span class="breadcrumb-link">Account</span></li>
+        </ul>
+      </section>
+
+      <!-- ============== Account page =============== -->
+
+      <section class="account section-lg">
+        <div class="account-container container grid">
+          <div class="account-tabs">
+            <p class="account-tab active-tab" data-target="#dashboard">
+              <i class="fa-solid fa-gear"></i> Dashbord
+            </p>
+
+            <p class="account-tab" data-target="#order">
+              <i class="fa-solid fa-bag-shopping"></i> Orders
+            </p>
+
+            <p class="account-tab" data-target="#wishlist">
+              <i class="fa-solid fa-heart"></i> Wishlist
+            </p>
+
+            <p class="account-tab" data-target="#update-profile">
+              <i class="fa-solid fa-circle-user"></i> Update Profile
+            </p>
+
+            <p class="account-tab" data-target="#address">
+              <i class="fa-solid fa-location-dot"></i> Address
+            </p>
+
+            <p class="account-tab" data-target="#change-password">
+              <i class="fa-solid fa-key"></i> Change password
+            </p>
+
+            <p class="account-tab" data-target="#logout">
+              <i class="fa-solid fa-right-from-bracket"></i> Logout
+            </p>
+          </div>
+
+          <div class="account-tabs-content">
+            <div class="tab-content active-tab" content id="dashbord">
+              <h3 class="tab-header">Hello Ji</h3>
+
+              <div class="tab-body">
+                <p class="tab-description">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Exercitationem dolorem laboriosam beatae maxime impedit
+                  incidunt. Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+
+            <div class="tab-content" content id="order">
+              <h3 class="tab-header">Orders</h3>
+
+              <div class="tab-body">
+                <table class="account-order-container">
+                  <tr class="account-order grid">
+                    <th>Order</th>
+                    <th>Price</th>
+                    <th>Order-number</th>
+                    <th>Delivery</th>
+                  </tr>
+
+                  <tr class="account-order grid">
+                    <td>
+                      <div class="account-order-content flex">
+                        <div class="account-order-img">
+                          <img src="img/products/zara-shirt_1-1.jpeg" />
+                        </div>
+
+                        <div class="account-order-description">
+                          <div class="cart-details">
+                            <h4 class="order-tittle">
+                              Zara shirt with top quiliity maaterial
+                            </h4>
+                            <p class="description-color">
+                              White with light black
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>₹499</td>
+                    <td>274303</td>
+                    <td>Devlivered by Monday, 21may</td>
+                  </tr>
+
+                  <tr class="account-order grid">
+                    <td>
+                      <div class="account-order-content flex">
+                        <div class="account-order-img">
+                          <img src="img/products/zara-shirt_1-1.jpeg" />
+                        </div>
+
+                        <div class="account-order-description">
+                          <div class="cart-details">
+                            <h4 class="order-tittle">
+                              Zara shirt with top quiliity maaterial
+                            </h4>
+                            <p class="description-color">
+                              White with light black
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>₹499</td>
+                    <td>274303</td>
+                    <td>Devlivered by Monday, 21may</td>
+                  </tr>
+
+                  <tr class="account-order grid">
+                    <td>
+                      <div class="account-order-content flex">
+                        <div class="account-order-img">
+                          <img src="img/products/zara-shirt_1-1.jpeg" />
+                        </div>
+
+                        <div class="account-order-description">
+                          <div class="cart-details">
+                            <h4 class="order-tittle">
+                              Zara shirt with top quiliity maaterial
+                            </h4>
+                            <p class="description-color">
+                              White with light black
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>₹499</td>
+                    <td>274303</td>
+                    <td>Devlivered by Monday, 21may</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+            <div class="tab-content" content id="wishlist">
+              <h3 class="tab-header">wishlist</h3>
+
+              <div class="tab-body">
+                <table>
+                  <tr class="account-wishlist grid">
+                    <th>Sr. No.</th>
+                    <th>items</th>
+                    <th>Price</th>
+                  </tr>
+
+                  <tr class="account-wishlist grid">
+                    <td>01.</td>
+                    <td>
+                      <div class="account-wishlist-content flex">
+                        <div class="account-order-img">
+                          <img src="img/products/zara-shirt_1-1.jpeg" />
+                        </div>
+
+                        <div class="account-order-description">
+                          <div class="cart-details">
+                            <h4 class="order-tittle">
+                              Zara shirt with top quiliity maaterial
+                            </h4>
+                            <p class="description-color">
+                              White with light black
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>₹499</td>
+                  </tr>
+
+                  <tr class="account-wishlist grid">
+                    <td>02.</td>
+                    <td>
+                      <div class="account-wishlist-content flex">
+                        <div class="account-order-img">
+                          <img src="img/products/zara-shirt_1-1.jpeg" />
+                        </div>
+
+                        <div class="account-order-description">
+                          <div class="cart-details">
+                            <h4 class="order-tittle">
+                              Zara shirt with top quiliity maaterial
+                            </h4>
+                            <p class="description-color">
+                              White with light black
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>₹499</td>
+                  </tr>
+
+                  <tr class="account-wishlist grid">
+                    <td>03.</td>
+                    <td>
+                      <div class="account-wishlist-content flex">
+                        <div class="account-order-img">
+                          <img src="img/products/zara-shirt_1-1.jpeg" />
+                        </div>
+
+                        <div class="account-order-description">
+                          <div class="cart-details">
+                            <h4 class="order-tittle">
+                              Zara shirt with top quiliity maaterial
+                            </h4>
+                            <p class="description-color">
+                              White with light black
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>₹499</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+            <div class="tab-content" content id="update-profile">
+              <h3 class="tab-header">Update Profile</h3>
+
+              <div class="tab-body">
+                <input type="text" placeholder="New username" />
+                <a href="#"><button class="btn">Save</button></a>
+              </div>
+            </div>
+
+            <div class="tab-content" content id="address">
+              <h3 class="tab-header">Address</h3>
+
+              <div class="tab-body">
+                <p class="account-address">
+                  Ram janki Mandir <br />
+                  Kasia Bazar, <br />
+                  Kushinagar, <br />
+                  UP, India <br />
+                  274402
+                </p>
+                <a href="#" class="address-btn">Edit</a>
+              </div>
+            </div>
+
+            <div class="tab-content" content id="change-password">
+              <h3 class="tab-header">Change Password</h3>
+
+              <div class="tab-body">
+                <input type="text" placeholder="Current Password" />
+                <input type="text" placeholder="New Password" />
+                <input type="text" placeholder="Confirm Password" />
+                <a href="#"><button class="btn">Save</button></a>
+              </div>
+            </div>
+
+            <div class="tab-content" content id="logout">
+              <h3 class="tab-header">Logout</h3>
+
+              <div class="tab-body">
+                <a href="#"><button class="btn">Logout</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============== Newsletter =============== -->
+
+      <section class="newsletter section home-newsletter">
+        <div class="newsletter-container container grid">
+          <h3 class="newsletter-tittle flex">
+            <img src="img/svg/Email.svg" alt="" class="newsletter-icon" />
+            Subscribe Newsletter
+          </h3>
+          <p class="newsletter-description">
+            ...to get best offers and coupons instantly
+          </p>
+          <form class="newsletter-form flex">
+            <input
+              type="text"
+              class="newsletter-input"
+              placeholder="Enter your Email"
+            />
+            <a href="" class="btn subscribe-btn">Subscribe</a>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============== Footer =============== -->
+
+    <footer class="footer container">
+      <div class="footer-container section grid">
+        <div class="footer-address">
+          <a href="index.html" class="footer-logo">
+            <img src="img/logo.jpeg" alt="" />
+          </a>
+          <h4 class="footer-subtittle">Contact</h4>
+
+          <p class="footer-description">
+            <b>Address : </b> Badshahpur sector 49, Gurgoan
+          </p>
+
+          <p class="footer-description">
+            <b>Phone No : </b> +91 XXX XXX 3802, +91 XXX XXX 6377
+          </p>
+
+          <div class="footer-social">
+            <h4 class="social-subtittle">Follow us :</h4>
+
+            <div class="footer-social-links flex">
+              <a href="" class="footer-social-icon">
+                <img src="img/svg/facebook.svg" alt="" />
+              </a>
+
+              <a href="" class="footer-social-icon">
+                <img src="img/svg/twitter.svg" alt="" />
+              </a>
+
+              <a href="" class="footer-social-icon">
+                <img src="img/svg/instagram.svg" alt="" />
+              </a>
+
+              <a href="" class="footer-social-icon">
+                <img src="img/svg/whatsapp.svg" alt="" />
+              </a>
+
+              <a href="" class="footer-social-icon">
+                <img src="img/svg/youtube.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h3 class="footer-tittle">Address</h3>
+
+          <ul class="footer-links">
+            <li><a href="pages/about.html" class="footer-link">About us</a></li>
+            <li><a href="pages/about.html" class="footer-link">FAQ</a></li>
+            <li>
+              <a href="pages/about.html" class="footer-link"
+                >Privacy & Policy</a
+              >
+            </li>
+            <li>
+              <a href="pages/about.html" class="footer-link"
+                >Terms & conditions</a
+              >
+            </li>
+            <li>
+              <a href="pages/about.html" class="footer-link">Contact us</a>
+            </li>
+            <li>
+              <a href="pages/about.html" class="footer-link">Support Center</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-myaccounts">
+          <h3 class="footer-tittle">My Accounts</h3>
+
+          <ul class="footer-links">
+            <li><a href="pages/about.html" class="footer-link">Sign in</a></li>
+            <li>
+              <a href="pages/about.html" class="footer-link">my wishlist</a>
+            </li>
+            <li>
+              <a href="pages/about.html" class="footer-link">View cart</a>
+            </li>
+            <li><a href="pages/about.html" class="footer-link">Orders</a></li>
+            <li><a href="pages/about.html" class="footer-link">Help</a></li>
+            <li><a href="pages/about.html" class="footer-link">Others</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-payments">
+          <h3 class="footer-tittle">Secured payment Getways</h3>
+
+          <img src="img/payment-getways.png" alt="" />
+        </div>
+      </div>
+
+      <div class="footer-bottom flex">
+        <p>&copy; 2024 Deep mart pvt. ltd.</p>
+        <p>All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <!-- ============== Javascript =============== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

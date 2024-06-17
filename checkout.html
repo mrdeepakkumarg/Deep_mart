@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deep Mart</title>
+    <link
+      rel="shortcut icon"
+      href="img/favicon-16x16.png"
+      type="image/x-icon"
+    />
+    <!-- swwiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ============== Navbar =============== -->
+
+    <header class="header">
+      <div class="top-header">
+        <p class="header-coupons">Super value deals - save more with coupons</p>
+      </div>
+      <div class="container header-container">
+        <nav class="navbar">
+          <a href="index.html" class="nav-logo">
+            <img src="img/logo.jpeg" alt="" />
+          </a>
+
+          <div class="navbar-container">
+            <ul class="nav-lists">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="shop.html" class="nav-link">Shop</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="accounts.html" class="nav-link">Account</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="login.html" class="nav-link">Login</a>
+              </li>
+            </ul>
+
+            <div class="nav-search">
+              <input
+                type="text"
+                placeholder="Search here..."
+                class="form-input"
+              />
+              <img src="img/svg/search.svg" alt="" />
+            </div>
+          </div>
+        </nav>
+
+        <div class="nav-user-action">
+          <a href="wishlist.html" class="header-action-btn">
+            <img src="img/svg/favorite.svg" alt="" />
+            <span class="count">3</span>
+          </a>
+
+          <a href="addtocart.html" class="header-action-btn">
+            <img src="img/svg/shopping_cart.svg" alt="" />
+            <span class="count">3</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ============== Main =============== -->
+
+    <main class="main">
+      <!-- ============== Breadcrumb =============== -->
+
+      <section class="breadcrumb">
+        <ul class="breadcrumb-list container flex">
+          <li><a href="index.html" class="breadcrumb-link">Home</a></li>
+          <li><span class="breadcrumb-link">></span></li>
+          <li><span class="breadcrumb-link">Add-to-cart</span></li>
+          <li><span class="breadcrumb-link">></span></li>
+          <li><span class="breadcrumb-link">Checkout</span></li>
+        </ul>
+      </section>
+
+      <!-- ============== Checkout =============== -->
+
+      <section class="checkout section">
+        <div class="checkout-container container grid">
+          <div class="checkout-billing">
+            <div class="billing-tabs flex">
+              <div class="billing-tab-btn active-tab" data-target="#shipping">
+                1.Shipping
+              </div>
+              <div class="billing-tab-btn" data-target="#payment">
+                2.Payment
+              </div>
+            </div>
+
+            <div
+              class="shipping-address billing-tab active-tab"
+              content
+              id="shipping"
+            >
+              <form class="address grid">
+                <input type="text" placeholder="First Name" />
+                <input type="text" placeholder="Last Name" />
+                <input type="email" placeholder="Email" />
+                <input type="number" placeholder="Phone number" />
+                <input type="text" placeholder="India" disabled />
+                <select id="inputState" class="form-select">
+                  <option value="AN">Andaman and Nicobar Islands</option>
+                  <option value="AP">Andhra Pradesh</option>
+                  <option value="AR">Arunachal Pradesh</option>
+                  <option value="AS">Assam</option>
+                  <option value="BR">Bihar</option>
+                  <option value="CH">Chandigarh</option>
+                  <option value="CT">Chhattisgarh</option>
+                  <option value="DN">Dadra and Nagar Haveli</option>
+                  <option value="DD">Daman and Diu</option>
+                  <option value="DL">Delhi</option>
+                  <option value="GA">Gujarat</option>
+                  <option value="HR">Haryana</option>
+                  <option value="HP">Himachal Pradesh</option>
+                  <option value="JK">Jammu and Kashmir</option>
+                  <option value="GA">Goa</option>
+                  <option value="JH">Jharkhand</option>
+                  <option value="KA">Karnataka</option>
+                  <option value="KL">Kerala</option>
+                  <option value="LD">Lakshadweep</option>
+                  <option value="MP">Madhya Pradesh</option>
+                  <option value="MH">Maharashtra</option>
+                  <option value="MN">Manipur</option>
+                  <option value="ML">Meghalaya</option>
+                  <option value="MZ">Mizoram</option>
+                  <option value="NL">Nagaland</option>
+                  <option value="OR">Odisha</option>
+                  <option value="PY">Puducherry</option>
+                  <option value="PB">Punjab</option>
+                  <option value="RJ">Rajasthan</option>
+                  <option value="SK">Sikkim</option>
+                  <option value="TN">Tamil Nadu</option>
+                  <option value="TG">Telangana</option>
+                  <option value="TR">Tripura</option>
+                  <option value="UT">Uttarakhand</option>
+                  <option value="UP">Uttar Pradesh</option>
+                  <option value="WB">West Bengal</option>
+                </select>
+                <input type="text" placeholder="City" />
+                <input type="number" placeholder="Pin code" />
+                <input
+                  type="textarea"
+                  class="delivery-point"
+                  placeholder="Street address"
+                />
+              </form>
+              <a href="#payment"
+                ><button class="btn delivery-btn">Save address</button></a
+              >
+            </div>
+
+            <div class="billing-payments billing-tab" content id="payment">
+              <div class="billing-tabs flex">
+                <div
+                  class="payment-tab-btn active-btn"
+                  data-target="#card-payment"
+                >
+                  <img src="img/Visa-mastercard_icon.webp" class="visa-card" />
+                </div>
+                <div class="payment-tab-btn" data-target="#mobile-payment">
+                  <img src="img/upi.webp" class="upi" />
+                </div>
+              </div>
+
+              <div
+                class="payment-card-m payment-tab active-btn"
+                content
+                id="card-payment"
+              >
+                <form class="payment-card-details grid">
+                  <input type="text" placeholder="Card Holder Name" />
+                  <input type="number" placeholder="Card Number" />
+                  <input type="number" placeholder="Expiring date" />
+                  <input type="number" placeholder="CVV" />
+                </form>
+
+                <a href="#"><button class="pay-now btn">Pay now</button></a>
+              </div>
+
+              <div
+                class="payment-upi-m payment-tab"
+                content
+                id="mobile-payment"
+              >
+                <div class="upi-details">
+                  <h3 class="upi-title">Preferred Method</h3>
+                  <div class="upi-links">
+                    <div class="upi-first-container" id="google">
+                      <div class="upi-first-link flex" for="upi-id1">
+                        <div class="upi-icon flex">
+                          <img
+                            src="img/google_pay.jfif"
+                            alt=""
+                            class="upi-logo"
+                          />
+                          <p class="upi-name">Google</p>
+                        </div>
+                        <input type="radio" id="upi-id1" />
+                      </div>
+                      <a href="#"
+                        ><button class="upi-pay active-pay btn">
+                          Pay using Google pay
+                        </button></a
+                      >
+                    </div>
+
+                    <div class="upi-first-container" id="Phonepe">
+                      <div class="upi-first-link flex">
+                        <div class="upi-icon flex" for="upi-id1">
+                          <img
+                            src="img/Phone_pay.jfif"
+                            alt=""
+                            class="upi-logo"
+                          />
+                          <p class="upi-name">Phonepe</p>
+                        </div>
+                        <input type="radio" id="upi-id1" />
+                      </div>
+                      <a href="#"
+                        ><button class="upi-pay btn">
+                          Pay using Phonepe
+                        </button></a
+                      >
+                    </div>
+
+                    <div class="upi-first-container" id="master-card">
+                      <div class="upi-first-link flex">
+                        <div class="upi-icon flex" for="upi-id1">
+                          <img
+                            src="img/master_card.png"
+                            alt=""
+                            class="upi-logo"
+                          />
+                          <p class="upi-name">xxx xxx xxx 1128</p>
+                        </div>
+                        <input type="radio" id="upi-id1" />
+                      </div>
+                      <a href="#"
+                        ><button class="upi-pay btn">
+                          Pay using mastercard
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="upi-details">
+                  <h3 class="upi-title">UPI</h3>
+                  <div class="upi-links">
+                    <div class="upi-first-container" id="Paytm">
+                      <div class="upi-first-link flex" for="upi-id2">
+                        <div class="upi-icon flex">
+                          <img src="img/Paytm.png" alt="" class="upi-logo" />
+                          <p class="upi-name">Google</p>
+                        </div>
+                        <input type="radio" id="upi-id2" />
+                      </div>
+                      <input
+                        type="text"
+                        class="upi-id"
+                        placeholder="Enter UPI Id"
+                      />
+                    </div>
+
+                    <div class="upi-first-container" id="amazon-pay">
+                      <div class="upi-first-link flex">
+                        <div class="upi-icon flex" for="upi-id2">
+                          <img
+                            src="img/amazon_pay.png"
+                            alt=""
+                            class="upi-logo"
+                          />
+                          <p class="upi-name">Amazon-pay</p>
+                        </div>
+                        <input type="radio" id="upi-id2" />
+                      </div>
+                      <input
+                        type="text"
+                        class="upi-id"
+                        placeholder="Enter UPI Id"
+                      />
+                    </div>
+
+                    <div class="upi-first-container" id="paypal">
+                      <div class="upi-first-link flex">
+                        <div class="upi-icon flex" for="upi-id2">
+                          <img src="img/Paypal.png" alt="" class="upi-logo" />
+                          <p class="upi-name">Paypal</p>
+                        </div>
+                        <input type="radio" id="upi-id2" />
+                      </div>
+                      <input
+                        type="text"
+                        class="upi-id"
+                        placeholder="Enter UPI Id"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="checkout-items">
+            <div class="checkout-description">
+              <div class="checkout-title">
+                <h3>Order Summery</h3>
+                <p class="checkout-items-qty">2 items</p>
+              </div>
+
+              <div class="chcekout-products">
+                <div class="checkout-item flex">
+                  <img src="img/products/iphone_1-2.jpeg" />
+                  <div class="checkout-item-description">
+                    <h4>Iphone 15 Ultra pro max</h4>
+                    <div class="checkout-product-details flex">
+                      <p>Qty: 1</p>
+                      <p class="checkout-product-price">₹ 1,49,000</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="checkout-item flex">
+                  <img src="img/products/iphone_1-2.jpeg" />
+                  <div class="checkout-item-description">
+                    <h4>Iphone 15 Ultra pro max</h4>
+                    <div class="checkout-product-details flex">
+                      <p>Qty: 1</p>
+                      <p class="checkout-product-price">₹ 1,49,000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+
+              <table class="checkout-products-total">
+                <tr>
+                  <td>Subtotal</td>
+                  <td>₹ 2,98,000</td>
+                </tr>
+
+                <tr>
+                  <td>Delivery Charges</td>
+                  <td>₹ 00</td>
+                </tr>
+
+                <tr>
+                  <td><b>Total</b></td>
+                  <td><b>₹ 2,98,000</b></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============== Newsletter =============== -->
+
+      <section class="newsletter section home-newsletter">
+        <div class="newsletter-container container grid">
+          <h3 class="newsletter-tittle flex">
+            <img src="img/svg/Email.svg" alt="" class="newsletter-icon" />
+            Subscribe Newsletter
+          </h3>
+          <p class="newsletter-description">
+            ...to get best offers and coupons instantly
+          </p>
+          <form class="newsletter-form flex">
+            <input
+              type="text"
+              class="newsletter-input"
+              placeholder="Enter your Email"
+            />
+            <a href="" class="btn subscribe-btn">Subscribe</a>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============== Footer =============== -->
+
+    <footer class="footer container">
+      <div class="footer-container section grid">
+        <div class="footer-address">
+          <a href="index.html" class="footer-logo">
+            <img src="img/logo.jpeg" alt="" />
+          </a>
+          <h4 class="footer-subtittle">Contact</h4>
+
+          <p class="footer-description">
+            <b>Address : </b> Badshahpur sector 49, Gurgoan
+          </p>
+
+          <p class="footer-description">
+            <b>Phone No : </b> +91 XXX XXX 3802, +91 XXX XXX 6377
+          </p>
+
+          <div class="footer-social">
+            <h4 class="social-subtittle">Follow us :</h4>
+
+            <div class="footer-social-links flex">
+              <a href="" class="footer-social-icon">
+                <img src="img/svg/facebook.svg" alt="" />
+              </a>
+
+              <a href="" class="footer-social-icon">
+                <img src="img/svg/twitter.svg" alt="" />
+              </a>
+
+              <a href="" class="footer-social-icon">
+                <img src="img/svg/instagram.svg" alt="" />
+              </a>
+
+              <a href="" class="footer-social-icon">
+                <img src="img/svg/whatsapp.svg" alt="" />
+              </a>
+
+              <a href="" class="footer-social-icon">
+                <img src="img/svg/youtube.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h3 class="footer-tittle">Address</h3>
+
+          <ul class="footer-links">
+            <li><a href="pages/about.html" class="footer-link">About us</a></li>
+            <li><a href="pages/about.html" class="footer-link">FAQ</a></li>
+            <li>
+              <a href="pages/about.html" class="footer-link"
+                >Privacy & Policy</a
+              >
+            </li>
+            <li>
+              <a href="pages/about.html" class="footer-link"
+                >Terms & conditions</a
+              >
+            </li>
+            <li>
+              <a href="pages/about.html" class="footer-link">Contact us</a>
+            </li>
+            <li>
+              <a href="pages/about.html" class="footer-link">Support Center</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-myaccounts">
+          <h3 class="footer-tittle">My Accounts</h3>
+
+          <ul class="footer-links">
+            <li><a href="pages/about.html" class="footer-link">Sign in</a></li>
+            <li>
+              <a href="pages/about.html" class="footer-link">my wishlist</a>
+            </li>
+            <li>
+              <a href="pages/about.html" class="footer-link">View cart</a>
+            </li>
+            <li><a href="pages/about.html" class="footer-link">Orders</a></li>
+            <li><a href="pages/about.html" class="footer-link">Help</a></li>
+            <li><a href="pages/about.html" class="footer-link">Others</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-payments">
+          <h3 class="footer-tittle">Secured payment Getways</h3>
+
+          <img src="img/payment-getways.png" alt="" />
+        </div>
+      </div>
+
+      <div class="footer-bottom flex">
+        <p>&copy; 2024 Deep mart pvt. ltd.</p>
+        <p>All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <!-- ============== Javascript =============== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
